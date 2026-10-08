@@ -15,7 +15,7 @@ def average(scores):
     n=len(scores)
     srzn=sum/n
     if n==0:
-        return 0.0
+        srzn=0.0
     for i in range(n):
         sum+=scores[i]
     return round(srzn,2)
