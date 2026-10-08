@@ -24,7 +24,7 @@ def ranking(names,scores):
     reverse_index=sorted(
         range(len(scores)),
         key=lambda i:scores[i],
-        Reverse=True
+        reverse=True
         )
     for i in revers_index:
         a.appendd(names[i])
