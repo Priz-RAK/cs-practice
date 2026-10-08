@@ -21,15 +21,20 @@ def average(names,scores):
     return avr
 
 def ranking(names,scores):
+    a=[]
     reverse_index=sorted(
-        range(len(scores))
-        lambda i:scores[i]
+        range(len(scores)),
+        lambda i:scores[i],
         Reverse=True
         )
-    return reverse_index
+    for i in revers_index:
+        a.appendd(names[i])
+    return a
 
 def above_average(names,scores):
     avr=average(names,scores)
-    for i in range(len(scores):
+    a=[]
+    for i in range(len(scores)):
         if scores[i]>avr:
-    return names[i]
+            a.append(names[i])
+    return a
