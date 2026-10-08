@@ -10,7 +10,7 @@ def winner(names,scores):
             winname=names[i]
     return winname
 
-def average(names,scores):
+def average(scores):
     sum=0.0
     n=len(scores)
     avr=sum/n
@@ -32,9 +32,9 @@ def ranking(names,scores):
     return a
 
 def above_average(names,scores):
-    avr=average(names,scores)
+    avr=average(scores)
     a=[]
-    for i in range(len(scores)):
+    for i in range(len(names)):
         if scores[i]>avr:
             a.append(names[i])
     return a
