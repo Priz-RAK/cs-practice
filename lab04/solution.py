@@ -16,8 +16,9 @@ def average(scores):
     srzn=sum/n
     if n==0:
         srzn=0.0
-    for i in range(n):
-        sum+=scores[i]
+    else:
+        for i in range(n):
+            sum+=scores[i]
     return round(srzn,2)
 
 def ranking(names,scores):
