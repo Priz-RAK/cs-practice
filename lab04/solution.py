@@ -17,7 +17,7 @@ def average(scores):
         sum/n==0.0
     for i in range(n):
         sum+=scores[i]
-    return sum/n
+    return round(sum/n,2)
 
 def ranking(names,scores):
     a=[]
