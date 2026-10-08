@@ -12,18 +12,20 @@ def winner(names,scores):
 
 def average(names,scores):
     sum=0.0
-    if n==0:
-        sum/n=0.0
     n=len(scores)
+    avr=sum/n
+    if n==0:
+        avr=0.0
     for i in range(n):
         sum+=scores[i]
-    return sum/n
+    return avr
 
 def ranking(names,scores):
     reverse_index=sorted(
         range(len(scores))
         lambda i:scores[i]
         Reverse=True
+        )
     return reverse_index
 
 def above_average(names,scores):
