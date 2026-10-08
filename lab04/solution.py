@@ -26,7 +26,8 @@ def ranking(names,scores):
         key=lambda i:scores[i],
         reverse=True
         )
-    for i in reverse_index:(names[i])
+    for i in reverse_index:(names[i]):
+        a.append(names[i])
     return a
 
 def above_average(names,scores):
