@@ -37,3 +37,4 @@ def above_average(names,scores):
         if scores[i]>avr:
             a.append(names[i])
     return a
+
