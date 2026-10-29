@@ -1,8 +1,10 @@
 import numpy as np
 
 def reshape_rows(values, width):
+    if width <= 0 or len(values)%width != 0:
+        return []
     arr = np.array(values)
-    matrix = arr.reshape(-1,width)
+    matrix = arr.reshape(-1 , width)
     return matrix.tolist()
 
 
